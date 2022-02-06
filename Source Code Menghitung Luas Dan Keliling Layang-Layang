@@ -1,0 +1,27 @@
+//Nama: Mareta Aliana
+//NPM : G1A021038
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+    int d1, d2, luas, keliling;
+    int sisi1, sisi2;
+
+    cout << "= Menghitung Luas & Keliling Layang-layang =" << endl;
+    cout << "============================================" << endl;
+    cout << "Diagonal 1         : "; cin >> d1;
+    cout << "Diagonal 2         : "; cin >> d2;
+    cout << "Sisi Pendek        : "; cin >> sisi1;
+    cout << "Sisi Panjang       : "; cin >> sisi2;
+
+    luas = (d1*d2)/2;
+    keliling = (sisi1+sisi2)*2;
+
+    cout << "Luas               : " << luas << endl;
+    cout << "Keliling           : " << keliling << endl;
+    
+    return 0;
+}
