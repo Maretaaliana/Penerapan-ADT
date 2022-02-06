@@ -1,0 +1,42 @@
+//Nama : Mareta Aliana
+//NPM  : G1A021038
+Berfungsi sebagai komentar yang tidak di eksekusi oleh compiler atau interpreter saat program dijalankan dan memberikan suatu informasi.
+
+#include <iostream>
+Fungsi #include adalah sebuah prosesor pengarah yang mengatakan kepada kompiler untuk meletakan kode dari header file iostream kedalam program. Fungsi cout memerlukan file iostream.
+
+using namespace std;
+Merupakan perintah yang dapat kita gunakan untuk menyajikan perintah atau deklarasi kepada sebuah aplikasi compiler yang menyatakan bahwa kita akan menggunakan seluruh berkas, class, atau fungsi yang Menjadi bagian dari sebuah namespace std yang bersangkutan. Berkat fungsi ini, kita dapat menghindari kesalahan berupa tidak dikenalnya cout yang ingin kita gunakan dari seluruh kombinasi maupun instruksi yang tersedia.
+
+int main()
+Maksud dari int di depan main adalah tipe data yang akan dikembalikan. Maka di dalam fungsi main(), wajib kita sertakan return 0. Artinya, fungsi main akan mengembalikan nilai 0 setelah selesai dieksekusi.
+
+{….}
+Kurung kurawal, dinamakan block statement yang gunanya untuk mengurung beberapa statement menjadi 1 statement.
+   
+    int d1, d2, luas, keliling;
+    int sisi1, sisi2;
+Tipe data.
+    
+    cout << "= Menghitung Luas & Keliling Layang-layang =" << endl;
+    cout << "=====================================" << endl;
+    
+Fungsi cout adalah fungsi standar pada C++ untuk menampilkan output ke layar. Simbol << digunakan untuk menuliskan teks yang akan ditampilkan ke layar. Teks harus diapit dengan tanda petik dan untuk membuat baris baru bisa menggunakan endl atau simbol \n, disini saya menggunakan endl.
+    cout << "Diagonal 1         : "; cin >> d1;
+    cout << "Diagonal 2         : "; cin >> d2;
+    cout << "Sisi Pendek        : "; cin >> sisi1;
+    cout << "Sisi Panjang       : "; cin >> sisi2;
+
+Fungsi cin (c input) adalah fungsi untuk mengambil input dari keyboard. Fungsi cin membutuhkan variabel untuk menyimpan data yang diinputkan. Variabel berfungsi untuk meyimpan data saat program berjalan.
+    
+    luas = (d1*d2)/2;
+    keliling = (sisi1+sisi2)*2;
+Merupakan rumus untuk mencari luas dan keliling Layang-layang.
+
+    cout << "Luas               : " << luas << endl;
+    cout << "Keliling           : " << keliling << endl;
+Dimana untuk menghasilkan output daripada input yang telah dibuat.
+    
+    
+    return 0;
+Digunakan untuk memberitahu bahwa kode telah selesai di eksekusi dengan exit code 0.
